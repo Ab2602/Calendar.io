@@ -21,6 +21,7 @@ router.get("/logout", (req, res) => {
 });
 
 router.get("/current-user", (req, res) => {
+  console.log(req);
   if (req.user) {
     res.json({
       name: req.user.name,
