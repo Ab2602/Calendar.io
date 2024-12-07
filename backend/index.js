@@ -20,7 +20,7 @@ app.use(
     resave: false, // Prevent resaving session if not modified
     saveUninitialized: false, // Prevent saving empty sessions
     cookie: {
-      secure: false, // Set true if using HTTPS
+      secure: true, // Set true if using HTTPS
       httpOnly: true, // Prevent client-side JS from accessing cookies
       maxAge: 24 * 60 * 60 * 1000, // 1 day
     },
