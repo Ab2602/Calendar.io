@@ -13,7 +13,7 @@ const app = express();
 
 // Middleware
 app.use(express.json());
-app.use(cors({ origin: "http://localhost:5173", credentials: true }));
+app.use(cors({ origin: "https://calendar-io-alrg.vercel.app/", credentials: true }));
 app.use(
   session({
     secret: process.env.COOKIE_KEY, // Use a strong secret key
