@@ -78,9 +78,7 @@ app.use(
     cookie: {
       httpOnly: true,    // Ensures the cookie is not accessible via JavaScript
       secure: process.env.NODE_ENV === 'production', // Set true for HTTPS in production
-      sameSite: "None",
-      sameSite: false,
-      SameSite: 'None',
+      sameSite: 'None',
       maxAge: 24 * 60 * 60 * 1000, // 1 day
     },
   })
