@@ -28,7 +28,7 @@ const Dashboard = () => {
     const fetchUser = async () => {
       try {
         const response = await fetch(
-          `https://calendar-io-psi.vercel.app//auth/current-user`,
+          `https://calendar-io-psi.vercel.app/auth/current-user`,
           { credentials: "include" }
         );
         const data = await response.json();
