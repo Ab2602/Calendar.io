@@ -62,7 +62,7 @@ const app = express();
 
 // Middleware
 app.use(express.json());
-app.use(cors({ origin: "https://calendar-io-alrg.vercel.app", credentials: true }));
+app.use(cors({ origin: "https://calendar-io-alrg.vercel.app", methods: ["POST", "PUT", "GET", "OPTIONS", "HEAD"],credentials: true }));
 
 // Session middleware setup with MongoDB store
 app.use(
