@@ -9,14 +9,14 @@ router.get(
 );
 
 router.get("/google/callback",passport.authenticate("google", { failureRedirect: "/" }),(req, res) => {
-    res.redirect("http://localhost:5173/dashboard");
+    res.redirect("https://calendar-io-alrg.vercel.app/dashboard");
   }
 );
 
 router.get("/logout", (req, res) => {
   req.logout((err) => {
     if (err) return res.status(500).send("Error logging out.");
-    res.redirect("http://localhost:5173");
+    res.redirect("https://calendar-io-alrg.vercel.app/");
   });
 });
 
