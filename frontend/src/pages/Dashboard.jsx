@@ -51,7 +51,7 @@ const Dashboard = () => {
     const fetchEvents = async () => {
       try {
         const response = await fetch(
-          `${import.meta.env.VITE_BACKEND_URL}/calendar/events`,
+          `${import.meta.env.VITE_BACKEND_URL}calendar/events`,
           { credentials: "include" }
         );
         const data = await response.json();
