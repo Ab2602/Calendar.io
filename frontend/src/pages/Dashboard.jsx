@@ -29,7 +29,12 @@ const Dashboard = () => {
       try {
         const response = await fetch(
           `https://calendar-io-psi.vercel.app/auth/current-user`,
-          { credentials: "include" }
+          { credentials: "include",
+           headers: {
+      'Content-Type': 'application/json',
+    }
+          },
+          
         );
         const data = await response.json();
         if (data) {
