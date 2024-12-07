@@ -21,7 +21,7 @@ app.use(
     saveUninitialized: false, // Prevent saving empty sessions
     cookie: {
       secure: true, // Set true if using HTTPS
-      httpOnly: true, // Prevent client-side JS from accessing cookies
+      sameSite: "None",
       maxAge: 24 * 60 * 60 * 1000, // 1 day
     },
   })
