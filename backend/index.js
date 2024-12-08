@@ -75,12 +75,12 @@ app.use(
       collectionName: 'sessions', // Custom collection name for sessions
       ttl: 24 * 60 * 60, // Time to live (1 day in seconds)
     }),
-    cookie: {
-      httpOnly: true,    // Ensures the cookie is not accessible via JavaScript
-      secure: process.env.NODE_ENV === 'production', // Set true for HTTPS in production
-      sameSite: 'None',
-      maxAge: 24 * 60 * 60 * 1000, // 1 day
-    },
+    // cookie: {
+    //   httpOnly: true,    // Ensures the cookie is not accessible via JavaScript
+    //   secure: process.env.NODE_ENV === 'production', // Set true for HTTPS in production
+    //   sameSite: 'None',
+    //   maxAge: 24 * 60 * 60 * 1000, // 1 day
+    // },
   })
 );
 
